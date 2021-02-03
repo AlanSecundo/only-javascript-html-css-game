@@ -6,14 +6,27 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100%;
+  min-height: 100vh;
   background-blend-mode: multiply;
   color: #fff;
-  padding: 0 50px;
+  margin: 0 50px;
   font-family: 'Carter One', cursive;
 }
 
+footer {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 80%;
+}
 
+a {
+  color: #fff;
+}
 
 .row {
   display: grid;
@@ -99,4 +112,15 @@ body {
   background: linear-gradient(160deg, #b06ab3 0%, #4568dc 100%);
   padding: 30px;
   border-radius: 10px;
+}
+
+.icons {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 20px !important;
+  transition: transform 0.3s;
+}
+
+.icons:hover{
+  transform: scale(1.2);
 }
